@@ -105,7 +105,7 @@ public class Library extends Building{
 
 
     public static void main(String[] args) {
-      new Library();
+      new Library("Neilson Library", "1 Chapin Way", 4);
     }
   
   }
