@@ -74,30 +74,32 @@ public class Library extends Building{
      * Method that prints out the Library's entire book collection and check out status.
      */
     public void printCollection(){
-      System.out.println(collection.toString());
+      for(String title: this.collection.keySet()){
+        System.out.println(title + " available: " + this.collection.get(title));
+      }
     }
 
 
     public static void main(String[] args) {
       Library lib = new Library("Neilson Library", "1 Chapin Way", 4);
-      lib.addTitle("Formula 1: Top Gear");
-      lib.addTitle("Spanish for Beginners");
+      // lib.addTitle("Formula 1: Top Gear");
+      // lib.addTitle("Spanish for Beginners");
 
-      System.out.println("Is available? true >>" + lib.isAvailable("Formula 1: Top Gear"));
-      System.out.println("Is available? true >>" + lib.isAvailable("Spanish for Beginners"));
+      // System.out.println("Is available? true >>" + lib.isAvailable("Formula 1: Top Gear"));
+      // System.out.println("Is available? true >>" + lib.isAvailable("Spanish for Beginners"));
 
-      lib.checkOut("Formula 1: Top Gear");
+      // lib.checkOut("Formula 1: Top Gear");
 
-      System.out.println("Is available? false >>" + lib.isAvailable("Formula 1: Top Gear"));
-      System.out.println("Is available? true >>" + lib.isAvailable("Spanish for Beginners"));
+      // System.out.println("Is available? false >>" + lib.isAvailable("Formula 1: Top Gear"));
+      // System.out.println("Is available? true >>" + lib.isAvailable("Spanish for Beginners"));
 
-      lib.returnBook("Formula 1: Top Gear");
+      // lib.returnBook("Formula 1: Top Gear");
 
-      System.out.println("Is available? true >>" + lib.isAvailable("Formula 1: Top Gear"));
-      System.out.println("Is available? true >>" + lib.isAvailable("Spanish for Beginners"));
+      // System.out.println("Is available? true >>" + lib.isAvailable("Formula 1: Top Gear"));
+      // System.out.println("Is available? true >>" + lib.isAvailable("Spanish for Beginners"));
 
-      System.out.println("Printing book collection:");
-      lib.printCollection();
+      // System.out.println("Printing book collection:");
+      // lib.printCollection();
     }
   
   }
