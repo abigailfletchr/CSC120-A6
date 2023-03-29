@@ -81,7 +81,7 @@ public class Library extends Building{
 
 
     public static void main(String[] args) {
-      Library lib = new Library("Neilson Library", "1 Chapin Way", 4);
+      new Library("Neilson Library", "1 Chapin Way", 4);
       // lib.addTitle("Formula 1: Top Gear");
       // lib.addTitle("Spanish for Beginners");
 
